@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOTLIN</title>
+</head>
+
+<body>
+    <header>
+        <h1>EL LENGUAJE DE PROGRAMACIÓN PARA ANDROID: KOTLIN</h1>
+        <nav>
+            <ul>
+                <li><a href='index.html'>Regresar a la página inicial</a></li>
+            </ul>
+                <h2 id="menu">Menú de Navegación:</h2>   
+            <ul>
+                <li><a href="#def">¿QUÉ ES KOTLIN?</a></li>
+                <li><a href='#carac'>CARACTERÍSTICAS</a></li>
+                <li><a href='#vent'>VENTAJAS</a></li>
+                <li><a href="#freeC">CURSO DE KOTLIN GRATUITO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="def">
+            <h2>¿QUÉ ES KOTLIN?</h2>
+            <article>
+                <p>
+                    Kotlin es un lenguaje de programación de código abierto creado por JetBrains que se ha popularizado gracias a que se puede utilizar para programar aplicaciones Android.
+                    Este lenguaje es de tipado estático, ya que se puede desarrollar sobre JVM o JavaScript; o desde hace unos meses, incluso sin necesidad de ninguna de ellas, ya que paralelamente se está desarrollando en nativo con LLVM. Gracias a eso, es totalmente interoperable con código Java, lo que permite migrar de una forma gradual nuestros proyectos.
+                </p>
+                <img src="./multimedia/kotlinAdicional.jpg" alt='kotlin.jpg' width="500px">
+            </article>
+            <h3>HISTORIA DE KOTLIN</h3>
+            <article>
+                Kotlin fue creado en 2010 por JetBrains, empresa responsable de Intellij IDEA, el entorno de desarrollo en que se basa Android Studio. En JetBrains trabajaban habitualmente con Java, lenguaje que les resultaba muy farragoso y pesado. Para algo tan simple como asociar código a un evento, teníamos que declarar una interface e instanciar un objeto anónimo.  Para cambiar el atributo de un objeto teníamos que hacerlo a través de un setter. Parece como si los diseñadores de Java disfrutaran escribiendo cientos de líneas de código repetitivo.
+                En JetBrains necesitaban un lenguaje más conciso que Java, pero que compilara en la máquina virtual Java. La opción más clara era utilizar Scala, pero lo descartaron por razones de eficiencia y exceso de potencia. Puede parecer que, a más potencia mejor, pero un exceso de potencia da mucha libertad al desarrollador, que puede usar diferentes estilos para escribir código. Esto da problemas cuando trabajamos en equipo o en el testing. Por lo tanto, decidieron crear un nuevo lenguaje que fuera 100% interoperable con Java, pero que incorporara las últimas técnicas de lenguajes más modernos como Scala, C#, Go, Swift o Python.
+                Con respecto a la potencia y libertad que nos proporciona cada lenguaje, podemos hacer la siguiente recapitulación histórica. C++ fue creado para dar una gran libertad al programador. Este podía utilizar diferentes paradigmas y estilos de programación. Esta característica se vio contraproducente, ya que un mismo programa podría escribirse de formas muy diferentes. Java trata de corregir este exceso, creando un lenguaje muy sencillo, pero posiblemente se peque de exceso de rigurosidad. El código resulta muy pesado de escribir e incluso poco legible. Luego aparece Scala, basado en el mismo concepto de máquina virtual Java, pero dando mucha más flexibilidad y potencia al lenguaje. Finalmente aparece Kotlin, que podríamos decir que se encuentra en un término medio. Es más flexible que Java, pero menos que Scala o C++.
+            <audio controls>
+                <source src="./multimedia/1.2 La Historia de Kotlin.mp3" type="audio/mp3">
+            </audio>
+            </article>
+        </section>
+
+        <section id="carac">
+            <h2>CARACTERÍSTICAS DE KOTLIN</h2>
+            <article>
+                <p>Kotlin destaca por varias características que no solo simplifican la lectura del código sino el propio desarrollo de este. Es por ello que las ventajas de Kotlin respecto a Java a la hora de desarrollar aplicaciones móviles ha hecho que este lenguaje se haga cada vez más popular.</p>
+                <ul>
+                    <li>
+                        <b>Multiplataforma</b>
+                        <p>Su estructura permite que los proyectos se desarrollen en cualquier tipo de plataforma, incluyendo iOS y Android. Esto se debe a que el lenguaje se ejecuta en JVM, facilitando que se comparta el código entre plataformas.</p>
+                    </li>
+                    <li>
+                        <b>Aprendizaje sencillo</b>
+                        <p>La sintaxis con Kotlin es bastante sencilla, por lo que los desarrolladores novatos no tienen muchos problemas a la hora de comenzar a utilizarlo. El código abierto también juega un gran papel en este aspecto, puesto que la comunidad acostumbra a ofrecer soluciones y apoyos continuos al resto de profesionales. La optimización en los procesos de escritura de códigos es uno de los objetivos más perseguidos por parte de los desarrolladores. Kotlin se ha encargado de eliminar el código redundante, reduciendo los tiempos de programación y habilitando una comercialización más rápida de las aplicaciones.</p>
+                    </li>
+                    <li>
+                        <b>Funcionalidad y orientación hacia los objetivos</b>
+                        <p>Kotlin se caracteriza, también, por mostrar una orientación doble: hacia la funcionalidad y hacia los objetivos. Permite trabajar con lambdas, por lo que los desarrolladores ahorran mucho tiempo, simplificando las tareas más molestas del trabajo. Además, permite resolver los problemas en tiempo real durante el desarrollo de la programación. Si lo juntamos con la eliminación de los nulos, podemos comprender por qué es el favorito de tantos desarrolladores a la hora de trabajar en aplicaciones Android.</p>
+                    </li>
+                    <li>
+                        <b>Corrutinas y flexibilidad</b>
+                        <p>La programación asíncrona está totalmente optimizada gracias a las corrutinas, evitando los callbacks y simplificando el acceso a las bases de datos. Además, el sistema goza de una elevada flexibilidad, permitiendo a los desarrolladores trabajar con el estilo que más les guste.</p>
+                    </li>
+                    <li>
+                        <b>Interoperable con Java</b>
+                        <p>Las bases de código de Java pueden interactuar con Kotlin sin ningún tipo de inconveniente, y viceversa. Esta característica es una de las más importantes de este lenguaje de programación y, probablemente, la que lo convierte en el favorito de muchos desarrolladores. Kotlin, además, aborda varios problemas de Java (referencias nulas controladas, sin excepciones marcadas ni tipos sin procesar…), incrementando, aún más, la utilidad de este lenguaje. Además, tiene mayor seguridad que Java, por lo que se convierte en una opción excepcional para su uso.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="vent">
+            <h2>VENTAJAS</h2>
+            <article>
+                <p>Veamos algunos de los beneficios de utilizar Kotlin para desarrollar aplicaciones de Android:</p>
+                <ul>
+                    <li>Compatibilidad en bibliotecas como Android Jetpack. Permite añadir funciones del lenguaje, como parámetros con nombre o lambdas, a las bibliotecas existentes, optimizando el trabajo.</li>
+                    <li>La legibilidad es buena y hay menos código, por lo que existe mayor facilidad a la hora de escribir, y también de interpretar el código de los demás desarrolladores.</li>
+                    <li>Tiene una integración completa con Android Studio, gracias a su lenguaje maduro y su ecosistema trabajado para garantizar la eficiencia al programar</li>
+                    <li>Su soporte es multiplataforma, por lo que el código se puede compartir para aplicaciones web o iOS.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="freeC">
+            <h2>CURSO GRATUITO DE KOTLIN</h2>
+            <article>
+                <p>Si te ha encantado lo que te hemos comentado acerca de Kotlin, entonces te gustará este curso gratuito</p>
+                <p>Este es un curso para principiantes</p>
+                
+                </ul>
+            </article>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ebQphhLpJG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="autor"><b>Autor del curso:</b></p>
+                <ul>
+                    <img src="./multimedia/autorCKle.jpg" alt='autor.jpg' width="85px" style="border: 10px solid;color:aquamarine;" >
+                    <li>Nombre: Brais Moure</li>
+                    <li>Nacionalidad: Español</li>
+                    <li>Descripción: HOLA 👋🏼 MI NOMBRE ES BRAIS MOURE
+                        Soy ingeniero de software desde hace más de 12 años. Actualmente trabajo como freelance full-stack developer iOS y Android. Además creo contenido formativo sobre programación y tecnología en redes. Aquí podrás encontrar todos mis enlaces de interés. ¡Bienvenid@!: <a href="https://www.youtube.com/c/MouredevApps/about">Canal de Youtube</a></li>
+        </section>
+    </main>
+
+
+    <footer class="piePag">
+        <h3>FUENTES DE INFORMACIÓN DEL TEMA</h3>
+        <a>https://www.hostingplus.pe/blog/kotlin-que-es-y-que-ventajas-tiene-su-aplicacion/</a><br>
+        <a>https://keepcoding.io/blog/que-es-kotlin-es-mejor-que-java/</a><br>
+        <a>https://www.youtube.com/watch?v=exZVdlvHRBo&t=28s</a><br>
+        <a>https://openwebinars.net/blog/que-es-kotlin/</a><br>
+        <ul>
+            <a href="#menu">Menu de Navegación</a><br>
+            <a href="index.html">Regresar a la página principal</a>
+        </ul>
+    </footer>
+</body>
+</html>
